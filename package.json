@@ -1,0 +1,27 @@
+{
+  "name": "my-vue2.0",
+  "version": "0.0.1",
+  "description": "",
+  "main": "rollup.config.js",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "rollup": "^2.45.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-serve": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:env": "rollup -c",
+    "serve": "cross-env ENV=development rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zo11o/my-vue2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zo11o/my-vue2.0/issues"
+  },
+  "homepage": "https://github.com/zo11o/my-vue2.0#readme"
+}

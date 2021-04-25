@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+      <p>hello</p>
+    </div>
     <script src="../dist/umd/vue.js"></script>
     <script>
       let vm = new Vue({
@@ -16,20 +19,24 @@
             name: 'zorro',
             age: 12,
             address: {
-              r:34,
+              r: ['c', {'d': 'cd'}],
               g:35
             }
           }
-        }
+        },
+        // template: document.getElementById('app')
       })
-      vm._data.address = {
-        a:1,
-        b:2
-      }
-      vm._data.name = {
-        c: 3,
-        d:4
-      }
+      // vm._data.address = {
+      //   a:1,
+      //   b:2
+      // }
+      // vm._data.name = {
+      //   c: 3,
+      //   d:4
+      // }
+      console.log(vm._data.address.r.push('ee'))
+      console.log(vm._data.address.r.splice(0,1, 'eess', 'eerwe', {'weiofj': 'df'}))
+      // vm._data.address.push['ee']
       console.log(vm._data)
     </script>
 </body>
